@@ -1,4 +1,5 @@
 import numpy as np
+
 np.set_printoptions(precision=6)#解决终端中输出省略号
 np.set_printoptions(threshold=np.inf) #控制台输出所有的值，不需要省略号
 
@@ -29,6 +30,11 @@ def standRegres(xArr,yArr):#计算最佳拟合直线
 
 if __name__ == "__main__":
     xArr,yArr=loadDataSet('8预测数值型数据回归\ex0.txt')
+    
+    #print(xArr)
+
     ws=standRegres(xArr,yArr)
+
+    
     print(ws)
 
