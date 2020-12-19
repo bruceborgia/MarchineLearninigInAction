@@ -6,7 +6,7 @@ perception
 这样就可以将线性回归的结果映射到两分类的结果上了。
 定义损失函数为错误分类的数目，比较直观的方式是使用指示函数，但是指示函数不可导，因此可以定义：
 
-![1](https://g.yuque.com/gr/latex?L(w)%3D%5Csum%5Climits_%7Bx_i%5Cin%5Cmathcal%7BD%7D_%7Bwrong%7D%7D-y_iw%5ETx_i%0A)
+![1](https://github.com/bruceborgia/MarchineLearninigInAction/blob/master/ReadMeImagine/%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0.png)
 
 其中，是错误分类集合，实际在每一次训练的时候，我们采用梯度下降的算法。损失函数对  的偏导为：
 但是如果样本非常多的情况下，计算复杂度较高，但是，实际上我们并不需要绝对的损失函数下降的方向，我们只需要损失函数的期望值下降，但是计算期望需要知道真实的概率分布，我们实际只能根据训练数据抽样来估算这个概率分布（经验风险）：
