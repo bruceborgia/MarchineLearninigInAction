@@ -15,6 +15,6 @@ perception
 
 我们知道，  越大，样本近似真实分布越准确，但是对于一个标准差为  的数据，可以确定的标准差仅和  成反比，而计算速度却和  成正比。因此可以每次使用较少样本，则在数学期望的意义上损失降低的同时，有可以提高计算速度，如果每次只使用一个错误样本，我们有下面的更新策略（根据泰勒公式，在负方向）：
 
-https://github.com/bruceborgia/MarchineLearninigInAction/blob/master/ReadMeImagine/%E8%BF%AD%E4%BB%A3%E6%96%B9%E7%A8%8B.png
+![](https://github.com/bruceborgia/MarchineLearninigInAction/blob/master/ReadMeImagine/%E8%BF%AD%E4%BB%A3%E6%96%B9%E7%A8%8B.png)
 
 是可以收敛的，同时使用单个观测更新也可以在一定程度上增加不确定度，从而减轻陷入局部最小的可能。在更大规模的数据上，常用的是小批量随机梯度下降法。
