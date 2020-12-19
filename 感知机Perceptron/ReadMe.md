@@ -1,6 +1,6 @@
 perception
 我们选取激活函数为：
-
+![激活函数](https://github.com/bruceborgia/MarchineLearninigInAction/blob/master/ReadMeImagine/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.png)
 这样就可以将线性回归的结果映射到两分类的结果上了。
 定义损失函数为错误分类的数目，比较直观的方式是使用指示函数，但是指示函数不可导，因此可以定义：
 其中，是错误分类集合，实际在每一次训练的时候，我们采用梯度下降的算法。损失函数对  的偏导为：
