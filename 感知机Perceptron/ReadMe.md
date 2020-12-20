@@ -18,3 +18,5 @@ perception
 ![](https://github.com/bruceborgia/MarchineLearninigInAction/blob/master/ReadMeImagine/%E8%BF%AD%E4%BB%A3%E6%96%B9%E7%A8%8B.png)
 
 是可以收敛的，同时使用单个观测更新也可以在一定程度上增加不确定度，从而减轻陷入局部最小的可能。在更大规模的数据上，常用的是小批量随机梯度下降法。
+
+代码实现了李航书中的简单感知机
